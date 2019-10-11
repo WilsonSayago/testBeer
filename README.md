@@ -25,11 +25,11 @@ Descripcion API BackEnd:
 - Puerto: 8080
 - GET: 
 	- /; regresa todas las cervezas con su informacion.
-	- /{beerID}; busca una cerveza por su id, retorna un Map<?>.
-	- /{beerID}/boxprice; calcula el precio total a cancelar por la informacion de la cerveza ademas del tipo de moneda y la cantidad enviada, retorna un Map<?>.
+	- /{beerID}; busca una cerveza por su id, retorna un Json.
+	- /{beerID}/boxprice; calcula el precio total a cancelar por la informacion de la cerveza ademas del tipo de moneda y la cantidad enviada, retorna un Json.
 - POST:
-	1- /; guarda una cerveza en la DB, retorna un Map<?>.
-- Se realiaron validacion las cuales son retornadas en el Map<?> de la respuesta de cada endpoint con el tag "errors".
+	- /; guarda una cerveza en la DB, retorna un Json.
+- Se realiaron validacion las cuales son retornadas en el Json de la respuesta de cada endpoint con el tag "errors".
 - Se implementaron test para los endpoint GET(/, /{beerID}) y POST(/), manejan su propia DB(test).
 - Se manejo la DB H2, la cual es una base de datos en memoria, la cual se pobla al iniciar la aplicacion con el script en la carpeta resource. DB se llama testdb.
 - Se consume del API https://currencylayer.com/, la url y el key estan ubicados en el property.
