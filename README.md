@@ -5,11 +5,12 @@ Tecnologias utilizadas:
 - SpringBoot 2.1.8.RELEASE, para el backend.
 
 Descripcion Cliente FrontEnd:
-- Al momento de desarrollar se tenian las siguientesversiones:
+- Al momento de desarrollar se tenian las siguientes versiones:
 	1- Node v10.16.3
 	2- Npm 6.9.0
 	3- Angular CLI 8.3.8
-- Para iniciar el cliente ejecutar ng serve -o en la carpeta /test-front
+- Realizar un npm install para instalar las dependencias del proyecto en la carpeta /test-front.
+- Para iniciar el cliente ejecutar ng serve -o en la carpeta /test-front.
 - ruta /Beers (Pagina principal), muestra el listado de todas las cervezas.
 - ruta /Beers/{id} (Pagina Mostrar - Crear), muestra la cerveza a consultar ademas de contar con un componente
 para calcular el monto total por el tipo de moneda y la cantidad de cervezas.
