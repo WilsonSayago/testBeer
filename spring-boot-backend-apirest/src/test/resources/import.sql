@@ -1,0 +1,3 @@
+INSERT INTO beer_item (name, brewery, country, price, currency, status) VALUES ('Golden', 'Kross', 'Chile', 10.5, 'EUR', true);
+INSERT INTO beer_item (name, brewery, country, price, currency, status) VALUES ('Golden Medium', 'Kross 2', 'Chile', 11.5, 'EUR', true);
+INSERT INTO beer_item (name, brewery, country, price, currency, status) VALUES ('Golden Premium', 'Kross Gold', 'Chile', 12.5, 'EUR', true);
