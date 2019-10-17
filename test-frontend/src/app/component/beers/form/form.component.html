@@ -1,0 +1,53 @@
+<div class="card bg-dark text-white">
+  <div class="card-header">{{ titulo }}</div>
+  <div class="card-body">
+
+    <form>
+      <div class="form-group row">
+        <label  class="col-form-label col-sm-2">name</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" [(ngModel)]="beer.name" name="name" required [disabled]="mostrarCalculate">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label  class="col-form-label col-sm-2">brewery</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" [(ngModel)]="beer.brewery" name="brewery" required [disabled]="mostrarCalculate">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label  class="col-form-label col-sm-2">country</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" [(ngModel)]="beer.country" name="country" required [disabled]="mostrarCalculate">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label  class="col-form-label col-sm-2">price</label>
+        <div class="col-sm-6">
+          <input type="number" class="form-control" [(ngModel)]="beer.price" name="price" required [disabled]="mostrarCalculate">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <label  class="col-form-label col-sm-2">currency</label>
+        <div class="col-sm-6">
+          <input type="text" class="form-control" [(ngModel)]="beer.currency" name="currency" required [disabled]="mostrarCalculate">
+        </div>
+      </div>
+
+      <div class="form-group row">
+        <div class="col-sm-2">
+          <button class="btn btn-primary btn-block" role="button" (click)='create()' *ngIf="!beer.id else elseBlock">Crear</button>
+        </div>
+        <div class="col-sm-2">
+          <button class="btn btn-info btn-block" type="button" [routerLink]="['/beers']">Back</button>
+        </div>
+      </div>
+    </form>
+
+  <app-calculate [beer]="beer" *ngIf="mostrarCalculate" ></app-calculate>
+  </div>
+</div>

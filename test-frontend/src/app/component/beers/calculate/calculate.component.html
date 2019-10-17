@@ -1,0 +1,29 @@
+<div class="card border-primary mb-3">
+  <div class="card-header">Beers Cost</div>
+  <div class="card-body text-primary">
+    <h5 class="card-title">Calculate</h5>
+    <div class="my-2 text-left">
+    </div>
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>currency</th>
+          <th>quantity</th>
+          <th>total</th>
+          <th>action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="text" class="form-control" [(ngModel)]="beerBox.currency" name="currency"></td>
+          <td><input type="number" class="form-control" [(ngModel)]="beerBox.quantity" name="quantity"></td>
+          <td><input type="text" class="form-control" [(ngModel)]="beerBox.total" name="total" disabled></td>
+          <td>
+            <button type="button" name="editar" class="btn btn-primary btn-sm" (click)='calculate()'>calculate</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>
